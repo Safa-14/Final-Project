@@ -1,0 +1,41 @@
+/* HTML ELEMENTS */
+body {
+    margin: 0;
+    background-image: url("../img/light.png");
+}
+
+    /* LINK STYLES */
+       a:hover {
+           color: rgb(61, 61, 71);
+           text-decoration: underline;
+           background-color: rgb(25, 25, 63);
+       }
+
+
+    /* END LINK STYLES */
+
+
+/* END HTML ELEMENTS */
+
+
+
+
+/* CUSTOM STYLES */
+
+.topnav {
+    padding: 11px;
+    list-style-type: none;
+    background-image: url("../img/beige-tiles.png");
+    text-align: center;
+}
+
+.topnav>li {
+    display: inline;
+    padding: 10px 59px;
+}
+
+.topnav>li>a {
+    padding: 2px 2px;
+}
+
+/* END CUSTOM STYLES */
