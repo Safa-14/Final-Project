@@ -1,15 +1,73 @@
 /* HTML ELEMENTS */
 body {
-    margin: 0;
+    margin: 0 0;
+    padding: 10px 10px;
     background-image: url("../img/light.png");
 }
 
+
+
+    /*  CONTACT US HTML */
+    .main {
+
+        color: rgb(119, 16, 16);
+        text-align: center;
+    }
+
+    .percent-width {
+        width: 100px;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    textarea,
+    select {
+        width: 60%;
+        
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select {
+    height: 20px;
+    }
+
+    .custom-form-label {
+        display: inline-block;
+
+    }
+
+    .contact-us {
+        
+        padding: 40px;
+        text-align: center;
+    }
+
+    input[type="radio"]:checked+label {
+        font-weight: bold;
+        color: rgb(30, 52, 126);
+    }
+
+  
+    /* END CONTACT US HTML */
+
     /* LINK STYLES */
-       a:hover {
-           color: rgb(61, 61, 71);
-           text-decoration: underline;
-           background-color: rgb(25, 25, 63);
-       }
+    /* a:link {
+        color: #660000;
+        text-decoration: none;
+    } */
+    a:visited {
+        color: #292727;
+    }
+    
+    a:hover {
+        color: #cc0000;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: lime;
+    }
 
 
     /* END LINK STYLES */
@@ -23,19 +81,34 @@ body {
 /* CUSTOM STYLES */
 
 .topnav {
-    padding: 11px;
+    margin: -10 -10 0 -10;
+    padding: 0 0;
     list-style-type: none;
     background-image: url("../img/beige-tiles.png");
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
+    
 }
-
-.topnav>li {
+ul.topnav li {
     display: inline;
-    padding: 10px 59px;
+    /* border-right: 1px solid white; */
+    /* outline: 1px dotted blue; */
 }
-
-.topnav>li>a {
-    padding: 2px 2px;
+ul.topnav li a {
+    display: inline-block;
+    padding: 10px 20px;
 }
-
+ul.topnav li a:link {
+    color: white;
+}
+ul.topnav li a:visited {
+    color: #0f0f0f;
+}
+ul.topnav li a:hover {
+    color: #666666;
+    background-color: white;
+}
+.topnav li a:active {
+    box-shadow:inset 0 0 10px rgba(0,0,0,0.5);
+}
 /* END CUSTOM STYLES */
