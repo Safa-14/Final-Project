@@ -5,7 +5,74 @@ body {
     background-image: url("../img/light.png");
 }
 
+    /* HOME HTML */
 
+         /* IMAGES */
+
+         .auto-slider img {
+             display: block;
+         }
+
+         .auto-slider {
+            outline: 1px solid black;
+            width: 720px;
+            height: 360x;
+            overflow-x: hidden;
+            margin: auto;
+        }
+
+         .auto-slider-content {
+            list-style: none; 
+            display: flex;
+            animation: slide 10s  ease-in-out infinite;
+            animation-direction: alternate-reverse;
+        
+        }
+        .auto-slider-content:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes slide {
+        
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-720px);
+            }
+        
+            100% {
+                transform: translateX(-1440px);
+            }
+            
+        }
+
+        .citation {
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            background-color: rgb(160, 160, 167);
+            font-family: 'Be Vietnam', sans-serif;
+            font-size: 20px;
+            box-shadow: 0 5px 20px rgba(8, 8, 8, 0.5);            
+        }
+
+
+    
+
+        .box {
+            display: block;
+            height: auto;
+            width: 30%;
+            margin: 20px;
+            float: left; 
+            background-color: black;
+            color: rgb(160, 160, 167);
+           
+        
+            /* visibility: hidden; */
+        }
+    /* END HOME HTML */
 
     /*  CONTACT US HTML */
     .main {
@@ -29,7 +96,7 @@ body {
     input[type="text"],
     input[type="password"],
     select {
-    height: 20px;
+        height: 20px;
     }
 
     .custom-form-label {
@@ -50,6 +117,27 @@ body {
 
   
     /* END CONTACT US HTML */
+
+
+
+    /* ABOUT US HTML */
+    
+    .origin {
+        width: 532px;
+        height:800px ;
+        margin: 20px auto;
+        border: 1px solid black;
+        position: relative;
+        overflow: hidden;
+        background: url('img/bilel-2') no-repeat 0 0;
+    }
+    
+    .origin.transf:hover img {
+         margin-top: -960px;
+     }
+
+
+    /* ABOUT US HTML */
 
     /* LINK STYLES */
     /* a:link {
