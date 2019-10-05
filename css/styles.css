@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
 /* HTML ELEMENTS */
 body {
     margin: 0 0;
@@ -7,6 +11,17 @@ body {
 
     /* HOME HTML */
 
+        /* TITLE */
+        .title {
+    
+            height: 67px;
+            background-color: black;
+            color: aliceblue;
+            padding-left: 60%;
+            padding-top: 1px;
+            margin-top: -18px;
+         }
+
          /* IMAGES */
 
          .auto-slider img {
@@ -14,11 +29,12 @@ body {
          }
 
          .auto-slider {
-            outline: 1px solid black;
-            width: 720px;
-            height: 360x;
+            outline: 10px solid black;
+            width: 1320px;
+            height: 300x;
             overflow-x: hidden;
-            margin: auto;
+           
+           
         }
 
          .auto-slider-content {
@@ -38,11 +54,11 @@ body {
                 transform: translateX(0);
             }
             50% {
-                transform: translateX(-720px);
+                transform: translateX(-1320px);
             }
         
             100% {
-                transform: translateX(-1440px);
+                transform: translateX(-2640px);
             }
             
         }
@@ -66,13 +82,19 @@ body {
             width: 30%;
             margin: 20px;
             float: left; 
+            border: 1px solid rgb(160, 160, 167);
             background-color: black;
             color: rgb(160, 160, 167);
+            box-shadow: 0 5px 20px rgb(160, 160, 167);
            
         
             /* visibility: hidden; */
         }
     /* END HOME HTML */
+
+
+
+
 
     /*  CONTACT US HTML */
     .main {
@@ -120,24 +142,124 @@ body {
 
 
 
+
+
+
     /* ABOUT US HTML */
-    
-    .origin {
-        width: 532px;
-        height:800px ;
-        margin: 20px auto;
-        border: 1px solid black;
-        position: relative;
-        overflow: hidden;
-        background: url('img/bilel-2') no-repeat 0 0;
+
+    h1 {
+        text-align: center;
+        font-family: 'Grenze', serif;
+        color: #cc0000;
+        text-decoration: underline #cc0000;
     }
     
-    .origin.transf:hover img {
-         margin-top: -960px;
-     }
+    /* IMAGE */
+.origin {
+    width: 300px;
+    height:500px ;
+    /* margin: 20px auto; */
+    border: 4px solid black;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    background: url('img/hotel-wallpaper.png') no-repeat 0 0;
+    float: left;
+    margin-left: 75px;
+    margin-right: 100px; 
+    
+}
+
+ .origin.transf:hover img {
+     margin-top: -252px;
+ }
+ 
+ /* TEXT NEBEN IMAGE */
+ h2 {
+     font-size: 2em;
+     text-decoration: underline;
+ }
+ .qualif {
+     padding-top: 100px;    
+     
+ }
+ .qualif>li {
+     margin: 10px 0 10px 20px;
+     font-family: 'Mansalva', cursive;
+     font-size: 1.5em;
+        
+ }
+
+ .back {
+    width: 100%;
+    height: 510px;
+    border: 3px solid black;
+    background-color: rgb(99, 92, 92);
+
+ }
+ /* TABLE */
+ table {
+   width: 80%;
+   margin: auto;
+margin-top: 40px;
+}
+
+th,
+td{
+    border:2px solid black;
+}
+
+th {
+    width: 50%;
+    border: 2px solid rgb(6, 6, 12);
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: brown;
+}
+
+td {
+    border: 2px solid rgb(6, 6, 12);
+}
 
 
-    /* ABOUT US HTML */
+/* MOYENS TECHNIQUES UTILISE PAR LEQUIPE */
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+ .moyen,
+ h3 {
+ display: block;
+ text-align: center;
+ font-size: 1.5em;
+ color: rgb(72, 13, 209);
+ }
+ h3 {
+    text-decoration: underline;
+ }
+
+ .moyen> img {
+     height: 100px;
+     width: 100px;
+     /* margin-right: 30px;
+     margin-left: 30px; */
+     margin: 0 30px 10px 30px;
+     border: 3px solid black;
+     border-radius: 25%;
+     /* margin-bottom: 10px; */
+     
+ }
+
+ .moyen img:hover{
+    height: 120px;
+    width: 120px;
+ }
+
+
+    /* END ABOUT US HTML */
+
+    
 
     /* LINK STYLES */
     /* a:link {
@@ -170,9 +292,10 @@ body {
 
 .topnav {
     margin: -10 -10 0 -10;
-    padding: 0 0;
+    padding: 15px 0;
     list-style-type: none;
-    background-image: url("../img/beige-tiles.png");
+    /* background-image: url("../img/beige-tiles.png"); */
+    background-color: black;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     
@@ -184,13 +307,14 @@ ul.topnav li {
 }
 ul.topnav li a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 60px;
+    font-size: 1.5em;
 }
 ul.topnav li a:link {
     color: white;
 }
 ul.topnav li a:visited {
-    color: #0f0f0f;
+    color: rgb(160, 160, 167);
 }
 ul.topnav li a:hover {
     color: #666666;
