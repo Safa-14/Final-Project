@@ -12,16 +12,18 @@ body {
      /* HOME HTML */
 
         /* TITLE */
-        .title {
+        .title>h1{
     
             height: 67px;
             background-color: rgb(25, 23, 53);
             color: rgba(240, 248, 255, 0.918);
             padding-left: 60%;
-            padding-top: 1px;
+            padding-top: 14px;
             margin-top: -18px;
             margin-right: 3px;
             margin-left: 4px;
+            font-family: 'Lobster', cursive;
+            font-size: 3em;
          }
 
          /* IMAGES */
@@ -125,7 +127,7 @@ body {
 
  /* ABOUT US HTML */
 
- h1 {
+ .team {
     text-align: center;
     font-family: 'Grenze', serif;
     color: aliceblue;
@@ -254,25 +256,31 @@ width: 120px;
     input[type="password"],
     textarea,
     select {
-        width: 60%;
+        width: 500px;
         
     }
+
+    /* input[type="text"],
+    input[type="radio"] {
+       margin-left: 20px;
+    } */
 
     input[type="text"],
     input[type="password"],
     select {
-        height: 20px;
+        height: 30px;
     }
 
     .custom-form-label {
         display: inline-block;
+    
 
     }
 
     .contact-us {
         
-        padding: 40px;
-        text-align: center;
+        padding: 40px 0 40px 40px;
+        float: left;
     }
 
     input[type="radio"]:checked+label {
@@ -280,7 +288,15 @@ width: 120px;
         color: rgb(30, 52, 126);
     }
 
+    .nam>img {
+        margin: 100px 0 0 220px;
+        border: 3px solid rgba(3, 3, 110, 0.192);
+        border-radius: 25%;
+    }
   
+    .nam {
+        display: block;
+    }
     /* END CONTACT US HTML */
 
 
